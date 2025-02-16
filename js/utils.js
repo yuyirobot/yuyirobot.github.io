@@ -24,6 +24,7 @@ export function getImageData(fileURL) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', fileURL, true);
         xhr.responseType = "blob";
+        xhr.timeout = 60000;
         xhr.send();
         xhr.onload = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
