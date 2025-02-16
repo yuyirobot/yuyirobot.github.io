@@ -642,7 +642,7 @@ programButton.onclick = async () => {
     }
     progressMsgDIY.style.display = "inline";
     let fileArr = [];
-    let offset = 0x1000;
+    let offset = 0x0;
     var rowCount = table.rows.length;
     var row;
     for (let index = 1; index < rowCount; index ++) {
@@ -841,6 +841,10 @@ flashButton.onclick = async () => {
        developKitsRadioGroup.querySelectorAll("input[type=radio]:checked").length!== 0)){
         let flashFile = $("input[type='radio'][name='chipType']:checked").val();
         var file_server_url = config.firmware_images_url;
+
+        // Add a log to print the values of file_server_url and flashFile
+        console.log("file_server_url:", file_server_url, "flashFile:", flashFile);
+        
         progressMsgQS.style.display = "inline";
         progressMsgContainerQS.style.display = "block";
 
