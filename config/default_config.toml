@@ -2,7 +2,7 @@ esp_toml_version = 1.0
 
 firmware_images_url = "https://adwait-esp.github.io/flasher/images/"
 
-supported_apps = ["Matter-AllClustersApp-TE9", "Matter-AllClustersApp-M5Stack-TE9", "Matter-LightingApp-TE9", "RainMaker-Fan", "RainMaker-GPIO", "RainMaker-Homekit Switch", "RainMaker-Led Light", "RainMaker-Multi Device", "RainMaker-Switch", "RainMaker-Temperature Sensor"]
+supported_apps = ["RainMaker-111", "RainMaker-GPIO", "RainMaker-Homekit Switch", "RainMaker-Led Light"]
 
 
 [RainMaker-Fan]
