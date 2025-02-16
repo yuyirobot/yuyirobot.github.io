@@ -1,11 +1,11 @@
 esp_toml_version = 1.0
 
-firmware_images_url = "https://yuyirobot.github.io/images/"
+firmware_images_url = "https://yuyirobot.github.io/yuyirobot.github.io/images/"
 
 supported_apps = ["xiaozhi-tank", "xiaozhi-sparkbot-tank"]
 
 
-[xiaozhi-tan]
+[xiaozhi-tank]
 chipsets = ["ESP32", "ESP32-S2", "ESP32-C3"]
 image.esp32 = "xiaozhi-tank.bin"
 image.esp32-s2 = "xiaozhi-tank.bin"
