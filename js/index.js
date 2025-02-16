@@ -675,7 +675,9 @@ programButton.onclick = async () => {
 }
 
 async function downloadAndFlash(fileURL) {
+    console.log("getImageData ", fileURL);
     let data = await utilities.getImageData(fileURL);
+    console.log("getImageData end");
     try {
         if (data !== undefined) {
             $('#v-pills-console-tab').click();
@@ -690,6 +692,7 @@ async function downloadAndFlash(fileURL) {
             await esploader.writeFlash(flashOptions);
         }
     } catch (e) {
+        console.log("writeFlash err");
     }
 }
 
@@ -853,9 +856,11 @@ flashButton.onclick = async () => {
         postFlashClick();
         isFlashByDIYMode = false;
         isFlashByQuickTryMode = true;
+        console.log("before downloadAndFlash");
         await downloadAndFlash(file_server_url + flashFile);
-
+        console.log("after downloadAndFlash ", markdown_payload_url);
         if (markdown_payload_url) {
+            console.log("enter markdown_payload_url");
             let response = await fetch(markdown_payload_url);
             let mdContent = await response.text();
             let htmlText = utilities.mdToHtmlConverter(mdContent);
