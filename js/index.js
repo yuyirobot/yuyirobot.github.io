@@ -89,7 +89,7 @@ var isDefault = true;
 // Build the Quick Try UI using the config toml file. If external path is not specified, pick up the default config
 async function buildQuickTryUI() {
     const urlParams = new URLSearchParams(window.location.search);
-    var tomlFileURL = "https://yuyirobot.github.io/yuyirobot.github.io/config/yuyi.toml"; // defaulting to rainmaker for now.
+    var tomlFileURL = "https://yuyirobot.github.io/config/yuyi.toml"; // defaulting to rainmaker for now.
     var solution = urlParams.get("solution");
     if (solution){
         if (solution.toLowerCase() == "matter")
