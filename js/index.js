@@ -853,7 +853,8 @@ flashButton.onclick = async () => {
         postFlashClick();
         isFlashByDIYMode = false;
         isFlashByQuickTryMode = true;
-        await downloadAndFlash(file_server_url + flashFile);
+        await downloadAndFlash(`https://cors-anywhere.herokuapp.com/${file_server_url + flashFile}`);
+        //await downloadAndFlash(file_server_url + flashFile);
 
         if (markdown_payload_url) {
             let response = await fetch(markdown_payload_url);
