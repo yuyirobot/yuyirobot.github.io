@@ -1,5 +1,5 @@
 {
-	"name": "esp-launchpad",
+	"name": "yuyirobot.github.io",
 	"dependencies": {
 		"crypto-js": "^4.1.1",
 		"esptool-js": "^0.4.7",
