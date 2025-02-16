@@ -1,8 +1,8 @@
 esp_toml_version = 1.0
 
-firmware_images_url = "https://adwait-esp.github.io/adwait-esp.github.io/flasher/images/"
+firmware_images_url = "https://yurirobot.github.io/flasher/images/"
 
-supported_apps = ["xiaozhi-tank"]
+supported_apps = ["xiaozhi-tank","xiaozhi-sparkbot-tank"]
 
 
 [xiaozhi-tank]
@@ -10,6 +10,14 @@ chipsets = ["ESP32", "ESP32-S2", "ESP32-C3"]
 image.esp32 = "xiaozhi-tank.bin"
 image.esp32-s2 = "xiaozhi-tank.bin"
 image.esp32-c3 = "xiaozhi-tank.bin"
+android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"
+ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
+readme.text = "https://raw.githubusercontent.com/espressif/esp-rainmaker/master/examples/fan/README.md"
+
+[xiaozhi-sparkbot-tank]
+chipsets = ["ESP32", "ESP32-S2"]
+image.esp32 = "xiaozhi-sparkbot-tank.bin"
+image.esp32-s2 = "xiaozhi-sparkbot-tank.bin"
 android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"
 ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
 readme.text = "https://raw.githubusercontent.com/espressif/esp-rainmaker/master/examples/fan/README.md"
