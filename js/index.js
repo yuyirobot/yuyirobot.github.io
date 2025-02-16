@@ -868,11 +868,11 @@ flashButton.onclick = async () => {
 
             setTimeout(() => {
                 appInfoFlashContainer.classList.add("bounce");
-            }, 25000);
+            }, 2500);
 
             setTimeout(() => {
                 clearAppInfoFlashHistory("handleFlashCleanup");
-            }, 50000);
+            }, 5000);
 
             utilities.resizeTerminal(fitAddon);
         }
@@ -889,7 +889,7 @@ flashButton.onclick = async () => {
         window.scrollTo(0,0);
         setTimeout(() => {
             lblConnTo.innerHTML = previousState;
-        }, 30000);
+        }, 3000);
     }
 }
 let postFlashClick = () => {
