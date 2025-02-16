@@ -1,6 +1,6 @@
 esp_toml_version = 1.0
 
-firmware_images_url = "https://adwait-esp.github.io/adwait-esp.github.io/flasher/images/"
+firmware_images_url = "https://adwait-esp.github.io/flasher/images/"
 
 supported_apps = ["xiaozhi-tank"]
 

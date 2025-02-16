@@ -1,6 +1,6 @@
 esp_toml_version = 1.0
 
-firmware_images_url = "https://gitee.com/yuyirobot/esp-bin-repo/tree/master/"
+firmware_images_url = "https://yuyirobot.github.io/flasher/images/"
 
 supported_apps = ["xiaozhi-tank","xiaozhi-sparkbot-tank"]
 
