@@ -1,23 +1,44 @@
 esp_toml_version = 1.0
 
-firmware_images_url = "https://yuyirobot.github.io/flasher/images/"
+firmware_images_url = "https://yuyirobot-repo.oss-cn-guangzhou.aliyuncs.com/"
 
-supported_apps = ["xiaozhi-tank","xiaozhi-sparkbot-tank"]
+supported_apps = ["xiaozhi-tank","xiaozhi-sparkbot-tank","tank-body","mix","sparkbot-tank-control"]
 
 
 [xiaozhi-tank]
 chipsets = ["ESP32", "ESP32-S2", "ESP32-C3"]
-image.esp32 = "xiaozhi-tank.bin"
-image.esp32-s2 = "xiaozhi-tank.bin"
-image.esp32-c3 = "xiaozhi-tank.bin"
+image.esp32 = "xiaozhi-esp32-1.1-tank.bin"
+image.esp32-s2 = "xiaozhi-esp32-1.1-tank.bin"
+image.esp32-c3 = "xiaozhi-esp32-1.1-tank.bin"
 android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"
 ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
 readme.text = "https://raw.githubusercontent.com/espressif/esp-rainmaker/master/examples/fan/README.md"
 
 [xiaozhi-sparkbot-tank]
 chipsets = ["ESP32", "ESP32-S2"]
-image.esp32 = "xiaozhi-sparkbot-tank.bin"
-image.esp32-s2 = "xiaozhi-sparkbot-tank.bin"
+image.esp32 = "xiaozhi-esp32-1.1.2-sparkbot-tank.bin"
+image.esp32-s2 = "xiaozhi-esp32-1.1.2-sparkbot-tank.bin"
+android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"
+ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
+readme.text = "https://raw.githubusercontent.com/espressif/esp-rainmaker/master/examples/fan/README.md"
+
+[tank-body]
+chipsets = ["ESP32"]
+image.esp32 = "tank_body.bin"
+android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"
+ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
+readme.text = "https://raw.githubusercontent.com/espressif/esp-rainmaker/master/examples/fan/README.md"
+
+[mix]
+chipsets = ["ESP32"]
+image.esp32 = "mix.bin"
+android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"
+ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
+readme.text = "https://raw.githubusercontent.com/espressif/esp-rainmaker/master/examples/fan/README.md"
+
+[sparkbot-tank-control]
+chipsets = ["ESP32"]
+image.esp32 = "sparkbot_tank_control.bin"
 android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"
 ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
 readme.text = "https://raw.githubusercontent.com/espressif/esp-rainmaker/master/examples/fan/README.md"

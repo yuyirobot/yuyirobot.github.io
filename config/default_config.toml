@@ -1,6 +1,6 @@
 esp_toml_version = 1.0
 
-firmware_images_url = "https://yuyirobot.github.io/yuyirobot.github.io/flasher/images/"
+firmware_images_url = "https://yuyirobot-repo.oss-cn-guangzhou.aliyuncs.com/"
 
 supported_apps = ["RainMaker-Fan", "RainMaker-GPIO"]
 
