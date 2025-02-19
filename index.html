@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>ESP Launchpad</title>
+        <title>鱼易ESP</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -26,7 +26,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <img src="./assets/esp-logo.png" width="42" height="42" style="vertical-align:middle"></img>&emsp;
-                    <h4 class="modal-title"><span style="color: #17a2b8;"> ESP Firmware Flashing Status </span></h4>
+                    <h4 class="modal-title"><span style="color: #17a2b8;"> ESP 固件刷新状态 </span></h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeFlashComplete"></button>
                   </div>
                   <div class="modal-body" id="preview_body">
@@ -73,7 +73,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <img src="./assets/esp-logo.png" width="42" height="42" style="vertical-align:middle"></img>&emsp;
-                    <h4 class="modal-title"><span style="color: #17a2b8;"> ESP Reset Device Confirmation </span></h4>
+                    <h4 class="modal-title"><span style="color: #17a2b8;"> ESP 确认重置设备 </span></h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeResetModal"></button>
                   </div>
                   <div class="modal-body" id="preview_body">
@@ -156,8 +156,8 @@
         <div class="container" id="alert-container">
             <div class="text-center mt-3 intro-text">
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <label style="display:none" id="lblConnTo"><b>Connected to device: </b></label>
-                    <p><span>ESP Launchpad 帮助您将选定的固件镜像烧录到您的设备上。</span>
+                    <label style="display:none" id="lblConnTo"><b>连接到设备： </b></label>
+                    <p><span> 本操作将帮助您将选定的固件镜像烧录到您的设备上。</span>
                     <br /><span id="ensureConnect"> 确保您已将设备连接到串行 USB 端口。点击顶部菜单选项中的“连接”按钮，以连接到您的设备。
                         注意：一旦您烧录设备，任何早期的固件将被覆盖。</span>
                     </p>
@@ -182,7 +182,7 @@
                         </div>
                         <div class="field-container">
                             <label>
-                                ESP芯片类型
+                                芯片类型
                             </label>
                             <div class="field">
                                 <div id="chipsets">
@@ -201,7 +201,7 @@
                         </div>
                         <div class="field-container" id ="developKitsContainer" style="display: none">
                             <label>
-                                ESP Develop Kits
+                                开发套装
                             </label>
                             <div class="field">
                                 <div id="developKits">
@@ -220,7 +220,7 @@
                         </div>
                         <div class="field-container" id="appDescriptionContainer" style="display: none; align-items: baseline;">
                             <label>
-                                Application Description
+                                应用描述
                             </label>
                             <span class="appdescription-text" id="appDescription">
                             </span>
@@ -236,7 +236,7 @@
                     </div>
                     <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
-                          <h2 id="offcanvasRightLabel">Application Information</h2>
+                          <h2 id="offcanvasRightLabel">应用信息</h2>
                           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
@@ -244,7 +244,7 @@
                         </div>
                     </div>
                     <div class="card text-dark bg-light app-config-info-container" id="appConfigInfoContainer" style="display: none;">
-                        <div class="card-header">Application Configuration&colon;</div>
+                        <div class="card-header">应用配置&colon;</div>
                         <div class="card-body overflow-auto" id="appConfigInfo"></div>
                     </div>
                 </div>
@@ -388,7 +388,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <span>
-                        ESP Launchpad 是一个基于 Web 的工具，可用于将固件应用程序烧录到通过 USB 串口连接的 ESP32 设备。
+                        本网站是鱼易ESP烧录工具，可用于将固件应用程序烧录到通过 USB 串口连接的 ESP32 设备。
                     </span>
                     <p>
                         该工具有两种使用模式：
@@ -467,7 +467,7 @@
 
         <footer class="mt-auto py-3">
             <div class="container text-center">
-                <span class="text-muted">Copyright © 2024 Espressif Systems</span>
+                <span class="text-muted">Copyright © 2025 鱼易 </span>
             </div>
         </footer>
         <!-- Third party libraries-->
