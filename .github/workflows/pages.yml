@@ -41,7 +41,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        - name: setup aliyun oss
+      - name: setup aliyun oss
         uses: manyuanrong/setup-ossutil@master
         with:
           endpoint: oss-cn-guangzhou.aliyuncs.com
