@@ -6,18 +6,15 @@ supported_apps = ["xiaozhi-tank","xiaozhi-sparkbot-tank","tank-body","mix","spar
 
 
 [xiaozhi-tank]
-chipsets = ["ESP32", "ESP32-S2", "ESP32-C3"]
+chipsets = ["ESP32"]
 image.esp32 = "xiaozhi-esp32-1.1-tank.bin"
-image.esp32-s2 = "xiaozhi-esp32-1.1-tank.bin"
-image.esp32-c3 = "xiaozhi-esp32-1.1-tank.bin"
 android_app_url = ""
 ios_app_url = ""
 readme.text = ""
 
 [xiaozhi-sparkbot-tank]
-chipsets = ["ESP32", "ESP32-S2"]
+chipsets = ["ESP32"]
 image.esp32 = "xiaozhi-esp32-1.1.2-sparkbot-tank.bin"
-image.esp32-s2 = "xiaozhi-esp32-1.1.2-sparkbot-tank.bin"
 android_app_url = ""
 ios_app_url = ""
 readme.text = ""
