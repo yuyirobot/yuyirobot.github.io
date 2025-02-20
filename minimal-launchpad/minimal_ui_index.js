@@ -111,27 +111,28 @@ function MDtoHtml() {
     var converter = new showdown.Converter({ tables: true });
     converter.setFlavor('github');
     try {
-        fetch(config[config[application][0]].readme.text).then(response => {
-            if (response.ok) {
-                return response.text();
-            }
-        }).then(result => {
-            let htmlText = converter.makeHtml(result);
-            if (htmlText) {
-                message.innerHTML = htmlText;
-                message.style.display = "block";
-                productInfoContainer.classList.add("col-6", "slide-up");
-                terminalContainer.classList.remove("col-12", "fade-in");
-                terminalContainer.classList.add("col-6", "slide-right");
-                utilities.resizeTerminal(fitAddon);
-                setTimeout(() => {
-                    utilities.resizeTerminal(fitAddon);
-                }, 300)
-            } else {
-                message.style.display = "none";
-            }
-            consoleStartButton.click();
-        })
+        // fetch(config[config[application][0]].readme.text).then(response => {
+        //     if (response.ok) {
+        //         return response.text();
+        //     }
+        // }).then(result => {
+        //     let htmlText = converter.makeHtml(result);
+        //     if (htmlText) {
+        //         message.innerHTML = htmlText;
+        //         message.style.display = "block";
+        //         productInfoContainer.classList.add("col-6", "slide-up");
+        //         terminalContainer.classList.remove("col-12", "fade-in");
+        //         terminalContainer.classList.add("col-6", "slide-right");
+        //         utilities.resizeTerminal(fitAddon);
+        //         setTimeout(() => {
+        //             utilities.resizeTerminal(fitAddon);
+        //         }, 300)
+        //     } else {
+        //         message.style.display = "none";
+        //     }
+        //     consoleStartButton.click();
+        // })
+        consoleStartButton.click();
     } catch (error) {
         message.style.display = "none";
     }

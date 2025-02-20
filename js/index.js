@@ -163,7 +163,7 @@ async function buildQuickTryUI_v1_0() {
         addAppDescription(config[supported_apps[0]].description);
         populateSupportedChipsets(config[supported_apps[0]]);
         if (config[supported_apps[0]].readme?.text) {
-            markdown_payload_url = config[supported_apps[0]].readme.text;
+            //markdown_payload_url = config[supported_apps[0]].readme.text;
         }
 
         if (config[supported_apps[0]].console_baudrate) {
@@ -344,26 +344,26 @@ $('#device').on('change', function() {
     addAppDescription(config[deviceTypeSelect.value].description);
 
     if (config[deviceTypeSelect.value].readme?.text) {
-        markdown_payload_url = config[deviceTypeSelect.value].readme.text;
-        fetch(markdown_payload_url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(mdContent => {
-            let htmlText = utilities.mdToHtmlConverter(mdContent);
+        // markdown_payload_url = config[deviceTypeSelect.value].readme.text;
+        // fetch(markdown_payload_url)
+        // .then(response => {
+        //     if (!response.ok) {
+        //         throw new Error('Network response was not ok');
+        //     }
+        //     return response.text();
+        // })
+        // .then(mdContent => {
+        //     let htmlText = utilities.mdToHtmlConverter(mdContent);
 
-            appInfo.innerHTML = htmlText;
+        //     appInfo.innerHTML = htmlText;
 
-            utilities.resizeTerminal(fitAddon);
-            appInfoTriggerContainer.style.display = '';
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-            // Handle error scenario
-        });
+        //     utilities.resizeTerminal(fitAddon);
+        //     appInfoTriggerContainer.style.display = '';
+        // })
+        // .catch(error => {
+        //     console.error('Error fetching data:', error);
+        //     // Handle error scenario
+        // });
 
     } else {
         markdown_payload_url = "";
