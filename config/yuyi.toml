@@ -2,7 +2,7 @@ esp_toml_version = 1.0
 
 firmware_images_url = "https://yuyirobot-repo.oss-cn-guangzhou.aliyuncs.com/"
 
-supported_apps = ["tan_control","tan_body","factory","xiaozhi_v1_1","xiaozhi_v1_1_2"]
+supported_apps = ["tan_control","tan_body","factory","xiaozhi_v1_1","xiaozhi_v1_1_2","xiaozhi_v1_3"]
 
 
 
@@ -38,6 +38,13 @@ readme.text = ""
 [xiaozhi_v1_1_2]
 chipsets = ["ESP32-S3"]
 image.esp32-s3 = "xiaozhi-esp32-1.1.2-sparkbot-tank.bin"
+android_app_url = ""
+ios_app_url = ""
+readme.text = ""
+
+[xiaozhi_v1_3]
+chipsets = ["ESP32-S3"]
+image.esp32-s3 = "xiaozhi-esp32-sparkbot-1.3.0.bin"
 android_app_url = ""
 ios_app_url = ""
 readme.text = ""
