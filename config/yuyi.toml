@@ -2,7 +2,7 @@ esp_toml_version = 1.0
 
 firmware_images_url = "https://yuyirobot-repo.oss-cn-guangzhou.aliyuncs.com/"
 
-supported_apps = ["tan_control","tan_body","factory","xiaozhi_v1_1","xiaozhi_v1_1_2","xiaozhi_v1_3","xrobot_xiaozhi_v1_31","xrobot_xiaozhi_v1_5_2"]
+supported_apps = ["tan_control","tan_body","factory","xiaozhi_v1_1","xiaozhi_v1_1_2","xiaozhi_v1_3","xrobot_xiaozhi_v1_31","xrobot_xiaozhi_v1_5_2","humanoid_robot_v1_5_2"]
 
 
 
@@ -60,6 +60,13 @@ readme.text = ""
 [xrobot_xiaozhi_v1_5_2]
 chipsets = ["ESP32-S3"]
 image.esp32-s3 = "Xrobot_xiaozhi-1.5.2.bin"
+android_app_url = ""
+ios_app_url = ""
+readme.text = ""
+
+[humanoid_robot_v1_5_2]
+chipsets = ["ESP32-S3"]
+image.esp32-s3 = "humanoid_robot_v1.5.2.bin"
 android_app_url = ""
 ios_app_url = ""
 readme.text = ""
